@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="left">
+      <div class="home">
+        <div class="logo invert"><img src="img/logo.svg" alt="" /></div>
+        <ul>
+          <li><img class="invert" src="img/home.svg" alt="" />Home</li>
+          <li><img class="invert" src="img/search.svg" alt="" />Sreach</li>
+          <audio id="audioPlayer"></audio>
+        </ul>
+      </div>
+      <div class="playList">
+        <div class="playListHead">
+          <div>
+            <img class="invert" src="img/playlist.svg" alt="" />Your Library
+          </div>
+          <img src="img/addPlaylist.svg" alt="" />
+        </div>
+        <div class="playListBody">
+          <ul></ul>
+        </div>
+        <div class="footer">
+          <div>
+            <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/jp/privacy/"
+              ><span>Privacy Center</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+              ><span>Privacy Policy</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+              ><span>Cookies</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+              ><span>About Ads</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/jp/accessibility/"
+              ><span>Accessibility</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <header class="head">
+        <div class="songNavigation">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+        <div class="singUp-login">
+          <div id="signup">Sign up</div>
+          <div id="login">Login</div>
+        </div>
+      </header>
+      <main class="main">
+        <h2>Spotify Playlists</h2>
+        <div class="main-body"></div>
+      </main>
+      <div class="player">
+        <div class="aboveBar invert">
+          <div id="currentSongName">Song Name</div>
+          <div class="musicControls">
+            <img src="img/prevsong.svg" alt="" />
+            <img src="img/play.svg" alt="" />
+            <img src="img/nextsong.svg" alt="" />
+          </div>
+          <div id="timeVolume">
+            <div class="time">
+              <span id ="currentTime">0:00</span>/<span id="duration">0:00</span>
+            </div>
+            <img src="img/volume.svg" alt="" />
+            <input
+              type="range"
+              id="volumeSeekBar"
+              value="100"
+              min="0"
+              max="100"
+            />
+          </div>
+        </div>
+        <div class="belowBar">
+          <input type="range" id="seekBar" value="0" min="0" max="100" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
